@@ -1,0 +1,12 @@
+a=int(input("Pierwsza Liczba: "))
+b=int(input("Druga Liczba: "))
+x=a
+y=b
+while a!=b:
+ if a>b:
+   a=a-b
+ else:
+   b=b-a
+NWD=a
+NWW=x*y/NWD
+print("Dla liczb ",x," i ",y,"\nNWD = ",NWD,"\nNWW = ",int(NWW))
