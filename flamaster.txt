@@ -1,0 +1,15 @@
+n = int(input())
+for _ in range(n):
+    word = input()
+    word_len = len(word)
+    short = []
+    count = 0
+    for i, _ in enumerate(word):
+        count += 1
+        if i == word_len-1 or word[i] != word[i+1]:
+            if count <= 2:
+                short += [word[i] * count]
+            else:
+                short += [word[i], str(count)]
+            count = 0
+    print("".join(short))
